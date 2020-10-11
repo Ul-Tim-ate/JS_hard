@@ -1,17 +1,11 @@
-let money = 250000;
-let income = 'репетиторство';
-let addExpenses = 'Оплата жилья, продукты, интернет';
-let deposit = true;
-let mission = 1000000;
-let period = 12;
-console.log(typeof money);
-console.log(typeof income);
-console.log(typeof deposit);
-console.log(addExpenses.length);
-console.log('Период равен', period, 'месяцев');
-console.log('Цель заработать', mission, 'тенге');
-addExpenses.toLocaleLowerCase();
-console.log(addExpenses.split(', '));
+let result = 1;
+for (let num = 266219; num > 0; num /= 10 ) {
+	const element = num % 10;
+	num -= element;
+	result *= element;
+}
+console.log(result);
+result **= 3;
 
-let budgetDay = money / 30;
-console.log(budgetDay);
+alert(result.toString()[0]);
+alert(result.toString()[1]);
