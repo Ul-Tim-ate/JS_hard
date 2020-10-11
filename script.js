@@ -7,3 +7,4 @@ let period;
 alert('Pa Pa Power');
 console.log('Dead Men Bones');
 alert('Hello everybudy');
+let asds;
