@@ -15,11 +15,10 @@ switch (lang) {
 		console.log('Monday, tuesday, wednesday, thursday, friday, saturday, sunday');
 		break;
 }
-
-let days = ['en', 'ru'];
-days[0] = ['Monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
-days[1] = ['Понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
-lang === 'en' ? console.log(days[0]) : console.log(days[1]);
+const myMap = new Map();
+myMap.set('ru', 'Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+myMap.set('en', 'Monday, tuesday, wednesday, thursday, friday, saturday, sunday');
+console.log(myMap.get(lang));
 
 let namePerson = 'чмо';
 namePerson === 'Артём' ? console.log('Директор') : namePerson === 'Максим' ? console.log('Преподаватель') : console.log('Студент');
