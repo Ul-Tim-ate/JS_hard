@@ -16,7 +16,10 @@ function start() {
 				let temp = start();
 				temp();
 			}
-			else { return; }
+			else {
+				alert('Игра окончена');
+				return;
+			}
 		}
 		let answer = prompt('Введи число');
 		if (answer === null) {
@@ -40,7 +43,10 @@ function start() {
 				let temp = start();
 				temp();
 			}
-			else { return; }
+			else {
+				alert('Игра окончена');
+				return;
+			}
 		}
 	}
 	return guess;
