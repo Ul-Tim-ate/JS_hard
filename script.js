@@ -19,7 +19,6 @@ let options = {
 };
 setInterval(function () {
 	let date = new Date();
-	document.write('Сегодня ', date.toLocaleString("ru", options), ' ', date.getFullYear(), ' годa, ', date.getHours(), ' ', foo(date.getHours(), 'час'), date.getMinutes(), ' минут ', date.getSeconds(), ' секунд ');
-	document.write(date.toLocaleString());
-	window.location.reload();
+	let help = ('Сегодня ' + date.toLocaleString("ru", options) + ' ' + date.getFullYear() + ' ' + ' годa, ' + date.getHours() + foo(date.getHours(), 'час') + date.getMinutes() + ' минут ' + date.getSeconds() + ' секунд ');
+	document.body.innerHTML = help + date.toLocaleString().replace(', ', ' - ');
 }, 1000);
